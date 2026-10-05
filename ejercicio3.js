@@ -2,10 +2,13 @@ const prompt = require("prompt-sync")();
 let opc;
 
 do{
-    opc = prompt(`1) Ver saldo
+    console.log(`
+        1) Ver saldo
         2) Enviar dinero
         3) Recargar
-        4) Salir`);
+        4) Salir
+    `);
+    opc = prompt("> ");  
     if(opc == "1"){
         console.log("Imprimiendo saldo...");
     }else if(opc == "2"){
